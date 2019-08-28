@@ -13,12 +13,17 @@ body {
 
 ul {
   list-style: none;
-  padding: none;
+  padding: 0;
+}
+
+.octodex {
+
 }
 
 .octocat {
   width:30;
   display: inline-block}
+
 }
 
 .octocat > a {
@@ -26,6 +31,7 @@ ul {
   display: inline-block;
   position: relative;
   border-radius: 3px;
+  height: 100%;
 }
 
 .octocat > a:: after {
@@ -34,7 +40,8 @@ ul {
   border-right: solid 10px transparent;
   border-left: solid 10px transparent;
   position:absolute;
-  right: 100%
+  right: 1%
+  top: 100%
 }
 
 .author: > li> a {
@@ -43,6 +50,10 @@ ul {
 }
 
 image-number {
+  position: absolute;
+  top:  50%
+  transform: translateY(-50%);
+  left: 0;
   ::before
 .content: "#";
   }
@@ -51,8 +62,11 @@ image-number {
     border-bottom: solid 1px #CACACA;
     padding-top: 15px
     position: relative;
+    padding-bottom: 15px;
   }
 
   image-caption {
     display: inline-block;
   }
+
+  
