@@ -3,7 +3,7 @@
 }
 
 img {
-  width: 100%
+  width: 100%;
 }
 
 body {
@@ -17,56 +17,69 @@ ul {
 }
 
 .octodex {
-
+  text-align: center;
 }
 
 .octocat {
-  width:30;
-  display: inline-block}
-
+  width: 30%;
+  display: inline-block;
+  height: 100%;
 }
 
-.octocat > a {
+.octocat>a {
   border: solid 1px #cacaca;
   display: inline-block;
   position: relative;
   border-radius: 3px;
   height: 100%;
+  width: 100%;
 }
 
-.octocat > a:: after {
+.octocat>a:: after {
   content: "";
   height: 0;
   border-right: solid 10px transparent;
   border-left: solid 10px transparent;
-  position:absolute;
-  right: 1%
-  top: 100%
+  border-top: solid 10px #CACACA;
+  position: absolute;
+  right: 1%;
+  top: 100%;
+  width: 0;
 }
 
-.author: > li> a {
+.authors {
+  display: inline-block;
+}
+
+.authors>li>a {
   display: inline-block;
   width: 30px;
 }
 
-image-number {
+.authors img {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.image-number {
   position: absolute;
-  top:  50%
+  top: 50%;
   transform: translateY(-50%);
   left: 0;
-  ::before
-.content: "#";
-  }
+}
 
-  image-footer {
-    border-bottom: solid 1px #CACACA;
-    padding-top: 15px
-    position: relative;
-    padding-bottom: 15px;
-  }
+.image-number::before {
+  content: "#";
+}
 
-  image-caption {
-    display: inline-block;
-  }
+.image-footer {
+  position: relative;
+  border-bottom: solid 1px #CACACA;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
-  
+.image-caption {
+  text-align: right;
+}
